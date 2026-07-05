@@ -15,31 +15,18 @@ Berikut adalah bagian kode yang relevan dengan konsep OOP yang dijelaskan:
 
 ```bash
 public class Parcel {
-    private String kodeParcel;
-    private String namaParcel;
-    private String jenisParcel;
-    private double harga;
-    private int stok;
 }
 
 public class ParcelPremium extends Parcel {
-    private String bonusFasilitas;
+
 }
 
 public class Transaksi {
-    private String idTransaksi;
-    private Parcel parcelTerpilih;
-    private int jumlahBeli;
-    private double totalBayar;
-    private Date tanggal;
-    private String namaAdmin;
+
 }
 
 public class Main {
-    private static Parcel[] daftarParcel = new Parcel[50];
-    private static int jumlahParcel = 0;
-    private static Transaksi[] daftarTransaksi = new Transaksi[100];
-    private static int jumlahTransaksi = 0;
+
 }
 ```
 2. **Object** adalah instance dari class. Pada kode ini, daftarParcel[jumlahParcel++] = new ParcelPremium(kode, nama, harga, stok, bonus); adalah contoh pembuatan object.
@@ -47,7 +34,7 @@ public class Main {
 ```Bash
 daftarParcel[jumlahParcel++] = new ParcelPremium(kode, nama, harga, stok, bonus);
 ```
-3. **Atribut** adalah variabel yang ada dalam class. Pada kode ini, nama dan npm adalah contoh atribut.
+3. **Atribut** adalah variabel yang ada dalam class. Pada kode ini, kodeParcel dan namaParcel adalah contoh atribut.
 
 ```Bash
 String kodeParcel;
@@ -90,10 +77,10 @@ public String getKodeParcel() {
 public String getNamaParcel() {
     return namaParcel;
 }
-
+```
 7. **Encapsulation** adalah konsep menyembunyikan data dengan membuat atribut menjadi private dan hanya bisa diakses melalui method. Pada kode ini, atribut kodeParcel dan namaParcel dienkapsulasi dan hanya bisa diakses melalui method getter dan setter.
 
-Bash
+```Bash
 private String kodeParcel;
 private String namaParcel;
 ```
